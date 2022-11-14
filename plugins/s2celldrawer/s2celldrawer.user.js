@@ -1,20 +1,14 @@
 // ==UserScript==
-// @id             iitc-plugin-s2celldrawer@wintervorst
+// @id             iitc-plugin-s2celldrawer
 // @name           IITC plugin: S2 Cell Drawer
+// @author         wintervorst, dw235
 // @category       Layer
-// @version        0.0.4.20181209.010307
-// @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
-// @updateURL      https://github.com/Wintervorst/iitc/raw/master/plugins/s2celldrawer/s2celldrawer.user.js
-// @downloadURL    https://github.com/Wintervorst/iitc/raw/master/plugins/s2celldrawer/s2celldrawer.user.js
-// @description    [iitc-20181209.010307] Allows drawing of s2cells and creates a layerselected hook
-// @include        https://*.ingress.com/intel*
-// @include        http://*.ingress.com/intel*
-// @match          https://*.ingress.com/intel*
-// @match          http://*.ingress.com/intel*
-// @include        https://*.ingress.com/mission/*
-// @include        http://*.ingress.com/mission/*
-// @match          https://*.ingress.com/mission/*
-// @match          http://*.ingress.com/mission/*
+// @version        0.0.5-2022-11-14T1450Z
+// @namespace      https://github.com/IITC-CE/ingress-intel-total-conversion
+// @updateURL      https://github.com/clavelm/iitc-plugins-wintervorst/raw/master/plugins/s2celldrawer/s2celldrawer.user.js
+// @downloadURL    https://github.com/clavelm/iitc-plugins-wintervorst/raw/master/plugins/s2celldrawer/s2celldrawer.user.js
+// @description    Allows drawing of s2cells and creates a layerselected hook
+// @match          https://intel.ingress.com/*
 // @grant          none
 // ==/UserScript==
 
@@ -28,9 +22,9 @@ if(typeof window.plugin !== 'function') window.plugin = function() {};
 
 	//PLUGIN AUTHORS: writing a plugin outside of the IITC build environment? if so, delete these lines!!
 	//(leaving them in place might break the 'About IITC' page or break update checks)
-  plugin_info.buildName = 'iitc';
-  plugin_info.dateTimeVersion = '20181209.010307';
-  plugin_info.pluginId = 'S2 Cell Drawer';
+  plugin_info.buildName = 'dw235';
+  plugin_info.dateTimeVersion = '2022-11-14T1450Z';
+  plugin_info.pluginId = 'iitc-plugin-s2celldrawer';
 	// PLUGIN START ///////////////////////////////////////////////////////	
 	// use own namespace for plugin
 	window.plugin.s2celldrawer = function() {};            
